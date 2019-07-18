@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <script scr="myscript.js"> </script>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <body style="background-color:beige;">
+    <h1><center>Welcome</center></h1>
+    <p> Hi, buddies. </p>
+    <p><i> Here you can find everything and anything that comes to my head to share with you:
+      playlists, videos, storytimes, favorties, language learning exercises, etc. </i></p>
+      <!-- Navigation -->
+      <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#paris" class="w3-button w3-bar-item">Dream: Paris</a>
+        <a href="#school" class="w3-button w3-bar-item">School</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+      </nav>
+
+      <div class="Dropdown">
+  <button class="dropbtn">Europe</button>
+  <div class="dropdown-content">
+    <a href="#">France</a>
+    <a href="#">Italy</a>
+    <a href="#">Greece</a>
+    <a href="#">Spain</a>
+    <a href="#">Germany</a>
+    <a href="#">Ukraine</a>
+    <a href="#">Bulgaria</a>
+  </div>
+</div>
+      <!-- Dream Paris -->
+        <section>
+              <img class="mySlides" src="ef_paris.jpg" style="width:100%">
+              <img class="mySlides" src="opera_paris.jpg" style="width:100%">
+              <img class="mySlides" src="roof_paris.jpg" style="width:100%">
+            </section>
+            <script>
+      // Automatic Slideshow - change image every 3 seconds
+            var myIndex = 0;
+              carousel();
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+              }
+      </script>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide"><center>Paris</center></h2>
+  <p class="w3-opacity"><i>My true dream is to travel Europe in the company of myself of my freinds, and come back to my home country</i></p>
+  <p class="w3-justify"></p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p><b>Paris Parsons</b></p>
+    <img src="parsons.jpg" alt="Random Name" style="width:100%">
+    <p><i>This is my dream school. Unique, elegant, and pefect for Paris as well as any student intrested in fashion.</i></p>
+  </article>
+  <article class="w3-third">
+    <p><b>Museums</b></p>
+    <img src="muse.jpg" alt="Random Name" style="width:100%">
+    <p><i>Who doesnt want to learn, look at pretty historic pieces and take Instagram Pictures.</i></p>
+  </article>
+  <article class="w3-third">
+    <p><b>Parks/Public Places</b></p>
+    <img src="parks.jpg" alt="Random Name" style="width:100%">
+    <p><i>I love the strolls in the park in any country, rain or no rain...the outside is unique.</i></p>
+  </article>
+  <article class="w3-third">
+    <p><b>Cafes/Restaurant</b></p>
+    <img src="cafe.jpg" alt="Random Name" style="width:100%">
+    <p><i>Walking around a city will always make you hungry.</i></p>
+  </article>
+</section>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Lets drink some tea, relax, and tell me anything you want:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <center>
+      <img src="tea.jpg" style="width:60%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name:  ">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name:  ">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Europe</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your question or comment:  " style="width:50px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
